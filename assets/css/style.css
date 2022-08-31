@@ -1,0 +1,70 @@
+@media (min-width : 992px) {
+  .offcanvas {
+    visibility      : visible;
+    position        : relative;
+    background      : none;
+    border          : none;
+    justify-content : end;
+    color           : red;
+  }
+  .bg-red{
+    background:#ff004f;
+  }
+}
+
+@media (max-width : 992px) {
+  .offcanvas {
+    width : 250px !important;
+  }
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-100%);
+  }
+
+}
+.btn-rounded{
+  border-radius:25px;
+}
+
+.bg-gray {
+  background-color: #f3f6f8;
+}
+
+.bg-pink {
+  background-color: #f5c2d5;
+}
+
+.navbar-nav li a {
+color: rgb(24, 20, 20) !important;
+position: relative;
+display: inline-block;
+margin: 0px 10px;
+font-size: 18px;
+}
+
+.navbar-nav li a::after {
+  content:'';
+  width: 0%;
+  height: 3px;
+  background:#ff004f;
+  position:absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 1.5s;
+}
+
+
+ .active-menu {
+  width: 70%;
+  color:#ff004f;
+  border-bottom: 3px solid #ff004f;
+  border-radius:5px;
+  transition: 1.5s;
+}
+
+
+.navbar-nav li a:hover::after {
+  width: 100%;
+}

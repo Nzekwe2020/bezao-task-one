@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel ="stylesheet" href ="assets/css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="assets/css/plugins.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-business-set.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
+    <title>Bezao Task 1</title>
+</head>
+<body>
+    <!-- Navbar Starts -->
+    <header class="header">
+      <nav class ="navbar navbar-expand-lg navbar-light bg-white shadow p-3 mb-5">
+        <div class ="container">
+          <a class = "navbar-brand text-dark" href = "#">Navbar</a>
+          <button class = "btn btn-danger navbar-toggler border-3 px-2" type = "button" data-bs-toggle = "offcanvas" data-bs-target = "#offcanvasExample" aria-controls = "offcanvasExample">
+            <img style = "width: 30px" src = "assets/image/text-center.svg" alt = "menu icon">
+          </button>
+          <div class = "offcanvas offcanvas-start-lg bg-white" tabindex = "-1" id = "offcanvasExample" aria-labelledby = "offcanvasExampleLabel">
+            <div class = "offcanvas-header d-flex d-lg-none">
+              <h5 class = "offcanvas-title text-dark" id = "offcanvasExampleLabel">Navbar</h5>
+              <a href="javascript:void(0)" class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close" >
+                <svg xmlns = "http://www.w3.org/2000/svg" width = "24" height = "24" fill = "#000000" class = "bi bi-x-circle" viewBox = "0 0 16 16">
+                  <path d = "M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d = "M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="offcanvas-body p-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item" style="margin-left: 50px;">
+                  <a class="nav-link active-menu" aria-current = "page" href = "#">Home</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" aria-current = "page" href = "#">Menu</a>
+                </li>
+                <li class = "nav-item">
+                  <a class = "nav-link" aria-current = "page" href = "#">Meal Plans</a>
+                </li>
+              </ul>
+              <span style="margin-left: 310px;">
+                <i class="fa fa-search" style="margin-right: 10px;color: grey;" aria-hidden="true"></i>
+                <i class="fas fa-shopping-cart" style="margin-left: 10px;color: grey;"></i>
+                <a href="#" rel="noopener noreferrer" style="text-decoration: none; margin: 10px; color: grey;">Sign In</a>
+                <button class="btn btn-danger" style="border-radius: 25px;">Create an Account</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Ends -->
+
+    <!-- banner starts -->
+    <section class=" p-xl-5">
+      <div class="bg-white bg-red p-xl-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <strong><h1 style="font-size: 60px;">Delicious Meal at your convenience</h1></strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam deserunt tenetur voluptate! Consequatur facilis incidunt non deleniti.</p>
+              <button class="btn btn-danger" style="border-radius: 25px; width: 200px;">Get Started</button>
+            </div>
+            <div class="col-md-5" style="border: 5px solid #ff004f; border-radius:100%;height: 350px;width: 350px">
+              <div>
+                <img src="assets/img/food/1.jpg" style="border-radius:100%; height: 300px;width: 300px;margin-top: 20px;margin-left: 5px;" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner ends -->
+
+    <!-- food menus start -->
+    <section class="portfolio-area bg-gray default-padding">
+      <div class="bg-gray p-5">
+        <div class="container">
+          <div class="row" >
+            <div class="col-md-6">
+              <p style="color: #ff004f;">MENU</p>
+              <h2>Current Menu</h2>
+            </div>
+            <div class="col-md-6 portfolio-content portfolio-items-area inner-title text-center">
+              <div class="mix-item-menu active-theme text-center">
+                <button class="active" data-filter="*">All</button>
+                <button data-filter=".swallow">Swallow</button>
+                <button data-filter=".beans">Beans</button>
+                <button data-filter=".rice">Rice</button>
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="assets/img/food/2.jpg" width="500px" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Rice With Moi-Moi</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4>&#x20A6; 2,000</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="assets/img/food/1.jpg" width="500px" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">White Rice with Chicken</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4>&#x20A6; 2,000</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="assets/img/food/3.jpg" width="500px" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">White Rice with Sauce</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4>&#x20A6; 2,000</h4>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="assets/img/food/6.jpg" width="500px" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Egusi soup</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4>&#x20A6; 2,000</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="assets/img/food/4.jpg" width="500px" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Beans</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4>&#x20A6; 2,000</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="assets/img/food/5.jpg" width="500px" height="250px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Beans & plantain</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h4>&#x20A6; 2,000</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4"><center><button class="btn btn-danger btn-rounded" style="margin-top: 50px;margin-bottom:30px">Full Menu</button></center></div>
+              <div class="col-md-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- food menus end -->
+
+    <!-- testimony section starts -->
+    <section>
+      <div class="bg-pink p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1>What Customers say about us</h1>
+            </div>
+            <div class="col-md-8">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <center><div class="card" style="width: 60rem;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="assets/img/team/4.jpg" width="100%" style="border-radius:100%;" alt="">
+                            <h3>William Johnson</h3>
+                            <p>Enugu State</p>
+                          </div>
+                          <div class="col-md-8">
+                            <i class="fas fa-quote-right" style="color: #ff004f; padding-left: 350px; font-size: 35px;"></i>
+                            <p class="card-text p-5" style="text-align: justify;">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div></center>
+                  </div>
+                  <div class="carousel-item">
+                    <center><div class="card" style="width: 60rem;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="assets/img/team/4.jpg" width="100%" style="border-radius:100%;" alt="">
+                            <h3>William Johnson</h3>
+                            <p>Enugu State</p>
+                          </div>
+                          <div class="col-md-8">
+                            <i class="fas fa-quote-right" style="color: #ff004f; padding-left: 350px; font-size: 35px;"></i>
+                            <p class="card-text p-5" style="text-align: justify;">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div></center>
+                  </div>
+                  <div class="carousel-item">
+                    <center><div class="card" style="width: 60rem;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="assets/img/team/4.jpg" width="100%" style="border-radius:100%;" alt="">
+                            <h3>William Johnson</h3>
+                            <p>Enugu State</p>
+                          </div>
+                          <div class="col-md-8">
+                            <i class="fas fa-quote-right" style="color: #ff004f; padding-left: 350px; font-size: 35px;"></i>
+                            <p class="card-text p-5" style="text-align: justify;">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div></center>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimony section ends -->
+
+    <!-- Start Blog
+    ============================================= -->
+    <div class="blog-area default-padding">
+      <div class="container">
+          <div class="row">
+              <div class="site-heading text-center">
+                  <div class="col-md-8 col-md-offset-2">
+                      <h2>Recent Blog</h2>
+                      <p>
+                          Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. 
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="blog-items">
+                  <div class="col-md-4 item-box">
+                      <div class="item">
+                          <div class="thumb">
+                              <a href="#">
+                                  <img src="assets/img/blog/1.jpg" alt="Thumbnail">
+                                  <div class="overlay-icon">
+                                      <i class="fa fa-images"></i>
+                                  </div>
+                              </a>
+                          </div>
+                          <div class="info">
+                              <h4>
+                                  <a href="#">Old unsatiable our now </a>
+                              </h4>
+                              <div class="meta">
+                                  <ul>
+                                      <li>
+                                          <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                      </li>
+                                      <li>
+                                          <i class="fas fa-calendar-alt"></i> 2 Aug, 2018
+                                      </li>
+                                  </ul>
+                              </div>
+                              <p>
+                                  Chicken no wishing waiting am. Say concerns dwelling graceful six humoured. Whether mr up savings talking an. Active mutual nor father mother exeter
+                              </p>
+                              <a class="btn btn-sm btn-theme effect read-more" href="#">read more</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 item-box">
+                      <div class="item">
+                          <div class="thumb">
+                              <a href="#">
+                                  <img src="assets/img/blog/2.jpg" alt="Thumbnail">
+                                  <div class="overlay-icon">
+                                      <i class="fa fa-video"></i>
+                                  </div>
+                              </a>
+                          </div>
+                          <div class="info">
+                              <h4>
+                                  <a href="#">Connection preference</a>
+                              </h4>
+                              <div class="meta">
+                                  <ul>
+                                      <li>
+                                          <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                      </li>
+                                      <li>
+                                          <i class="fas fa-calendar-alt"></i> 12 Aug, 2018
+                                      </li>
+                                  </ul>
+                              </div>
+                              <p>
+                                  Listening acuteness dependent at or an. Apartments thoroughly unsatiable terminated sex how themselves. She are ten hours wrong walls stand early.
+                              </p>
+                              <a class="btn btn-sm btn-theme effect read-more" href="#">read more</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 item-box">
+                      <div class="item">
+                          <div class="thumb">
+                              <a href="#">
+                                  <img src="assets/img/blog/3.jpg" alt="Thumbnail">
+                                  <div class="overlay-icon">
+                                      <i class="fa fa-images"></i>
+                                  </div>
+                              </a>
+                          </div>
+                          <div class="info">
+                              <h4>
+                                  <a href="#">Decisively advantages nor</a>
+                              </h4>
+                              <div class="meta">
+                                  <ul>
+                                      <li>
+                                          <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                      </li>
+                                      <li>
+                                          <i class="fas fa-calendar-alt"></i> 23 Aug, 2018
+                                      </li>
+                                  </ul>
+                              </div>
+                              <p>
+                                   Domestic perceive on an ladyship extended received do. Why jennings our whatever his learning gay perceive. Is against no he without subject. Bed connection
+                              </p>
+                              <a class="btn btn-sm btn-theme effect read-more" href="#">read more</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- End Blog -->
+
+ <!-- Start Footer 
+    ============================================= -->
+    <footer class="default-padding-top bg-gray text-dark">
+      <div class="container">
+          <div class="row">
+              <div class="f-items fv1">
+                  <div class="col-md-4 item">
+                      <div class="f-item">
+                          <h4 class="text-dark">About Us</h4>
+                          <p class="text-dark">
+                              Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing because sitting replied six. Had arose guest visit going off child she new.
+                          </p>
+                          <p class="text-dark">
+                              <span>Please write your email and get our amazing updates, news and support</span>
+                          </p>
+                          <div class="subscribe">
+                              <form action="#">
+                                  <div class="input-group stylish-input-group">
+                                      <input type="email" name="email" class="form-control" placeholder="Enter your e-mail here">
+                                      <span class="input-group-addon">
+                                          <button type="submit">
+                                              <i class="fa fa-paper-plane"></i>
+                                          </button>  
+                                      </span>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 item">
+                      <div class="f-item link full">
+                          <h4 class="text-dark">Our Services</h4>
+                          <ul>
+                              <li><a href="#"  class="text-dark">FAQs</a></li>
+                              <li><a href="#"  class="text-dark">Our Menu</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-md-4 item">
+                      <div class="f-item gallery">
+                          <h4 class="text-dark">Gallery</h4>
+                          <ul>
+                              <li>
+                                  <a href="#">
+                                      <img alt="thumb" src="assets/img/thumb/1.jpg">
+                                      <span class="overay">
+                                          <i class="fa fa-plus"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img alt="thumb" src="assets/img/thumb/2.jpg">
+                                      <span class="overay">
+                                          <i class="fa fa-plus"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img alt="thumb" src="assets/img/thumb/3.jpg">
+                                      <span class="overay">
+                                          <i class="fa fa-plus"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img alt="thumb" src="assets/img/thumb/4.jpg">
+                                      <span class="overay">
+                                          <i class="fa fa-plus"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img alt="thumb" src="assets/img/thumb/5.jpg">
+                                      <span class="overay">
+                                          <i class="fa fa-plus"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img alt="thumb" src="assets/img/thumb/6.jpg">
+                                      <span class="overay">
+                                          <i class="fa fa-plus"></i>
+                                      </span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Start Footer Bottom -->
+      <div class="footer-bottom">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="col-md-6">
+                          <p  class="text-dark">&copy; Copyright 2018.</p>
+                      </div>
+                      <div class="col-md-6 footer-bottom-menu text-right">
+                          <ul>
+                              <li><a href="terms-conditions.html"  class="text-dark">Terms of Use</a></li>
+                              <li><a href="privacy-policy.html"  class="text-dark">Privacy Policy</a></li>
+                              <li><a href="contact-1.html"  class="text-dark">Contact Us</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- End Footer Bottom -->
+  </footer>
+  <!-- End Footer -->
+
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src ="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
